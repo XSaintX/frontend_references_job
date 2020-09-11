@@ -15,11 +15,8 @@
     "react": "^16.13.1",
     "react-d3-graph": "^2.5.0",
     "react-dom": "^16.13.1",
-    "react-google-charts": "^3.0.15",
     "react-graph-vis": "^1.0.5",
     "react-scripts": "3.4.1",
-    "react-table-hoc-draggable-columns": "^1.2.5",
-    "use-state-with-callback": "^1.0.18"
   },
   "scripts": {
     "start": "react-scripts start",
