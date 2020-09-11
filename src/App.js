@@ -16,7 +16,8 @@ function App() {
   const [pathformatted, setpathformatted] = useState({});
 
   const onSelect = e => {
-    var newItems = combo.filter((item) => item.id !== e.target.value);
+    let temporal = [...combo];
+    let newItems = temporal.filter((item) => item.id != e.target.value);
     setItems(newItems);
     setuserId(e.target.value);
   }
@@ -84,6 +85,7 @@ function App() {
     });
   }, []);
 
+  //createPath
   useMemo(() => {
     if (path != null) {
       const answer_array = path.split('-');
@@ -102,6 +104,7 @@ function App() {
     }
   }, [path]);
 
+  //fillTable
   useMemo(() => {
     if (Object.keys(graph).length > 0) {
       const arrayOfObj = graph.nodes;
@@ -144,7 +147,7 @@ function App() {
       </Grid>
       <br />
       <Grid container spacing={12} justify="center" alignItems="center" align-items-xs-center>
-        
+
         <Grid item xs={4} align="center">
           {Object.keys(graph).length > 0 ? (
             <>
