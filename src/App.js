@@ -18,6 +18,7 @@ function App() {
   const onSelect = e => {
     let temporal = [...combo];
     let newItems = temporal.filter((item) => item.id != e.target.value);
+    
     setItems(newItems);
     setuserId(e.target.value);
   }
