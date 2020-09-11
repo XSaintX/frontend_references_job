@@ -15,7 +15,7 @@ const SearchList = (WrappedComponent) => {
       let searchTerm = event.target.value;
       let self = this;
       let filteredData = this.props.list.filter(function (item) {
-        if (item[self.props.field].toUpperCase().indexOf(searchTerm.toUpperCase()) >= 0)
+        //if (item[self.props.field].toUpperCase().indexOf(searchTerm.toUpperCase()) >= 0)
           return item;
       });
       this.setState({ filteredData: filteredData, searchTerm: event.target.value })
