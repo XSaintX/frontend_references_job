@@ -9,7 +9,7 @@ This project finds the friend's reference to work in a specific company, first y
 
 ## How to install?
 
-1) Install dependencies with `npm install` or `yarn install` for backend.
+1) Install dependencies with `npm install` or `yarn install` for backend. You can see the backend project [here](https://github.com/XSaintX/backend_friends_reference_job)
 2) Install dependencies with `npm install` or `yarn install` for frontend.
 
 ## To run
