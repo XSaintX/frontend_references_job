@@ -108,8 +108,8 @@ function App() {
       const newArrayOfObj = arrayOfObj.map(({ id: name, ...rest }) => ({ name, ...rest }));
       settable(newArrayOfObj);
       let result = [];
-      for (var i = 0; i < graph.nodes.length; i++) {
-        result.push({ "id": i + 1, "name": graph.nodes[i].id, "company": graph.nodes[i].company });
+      for (let k = 0; k < graph.nodes.length; k++) {
+        result.push({ "id": k + 1, "name": graph.nodes[k].id, "company": graph.nodes[k].company });
       }
       setcombo(result);
     }
@@ -122,9 +122,9 @@ function App() {
           <label>
             User:
           <select onChange={e => onSelect(e)}>
-              {combo.map(i => (
-                <option key={i.id} value={i.id}>
-                  {i.name}
+              {combo.map(m => (
+                <option key={m.id} value={m.id}>
+                  {m.name}
                 </option>
               ))}
             </select>
@@ -132,9 +132,9 @@ function App() {
           <label>
             Company:
           <select onChange={e => onSelectCompany(e)}>
-              {items.map(i => (
-                <option key={i.id} value={i.company}>
-                  {i.company}
+              {items.map(n => (
+                <option key={n.id} value={n.company}>
+                  {n.company}
                 </option>
               ))}
             </select>
